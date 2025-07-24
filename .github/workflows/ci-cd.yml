@@ -26,7 +26,8 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run tests
-      run: pytest
+      run: |
+       PYTHONPATH=. pytest
 
   # cd:
   #   name: Continuous Deployment (Flask)
